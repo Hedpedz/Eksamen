@@ -19,7 +19,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Portofolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><button onclick="window.location.href='about.html'">Contact</button></li>
+                    <li><button class="orange-button" onclick="window.location.href='about.html'">Contact</button></li>
                 </ul>
             </nav>
         </header>
@@ -28,7 +28,7 @@
                 <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
                 <h2>Compeling headline</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                <button onclick="window.location.href='read_more'">Read more</button>
+                <button class="orange-button" onclick="window.location.href='read_more'">Read more about our services</button>
             </section>
 
             <section class="subheading">
@@ -41,7 +41,7 @@
                 <h2>About our company</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
                 <span>
-                    <button onclick="window.location.href='read_more'">Read more about us</button>
+                    <button class="orange-button" onclick="window.location.href='read_more'">Read more about us</button>
                 </span>                
 
                 
@@ -50,27 +50,31 @@
             <section class="our_services">
                 <h2>Our services</h2>
                 <article>
+                    <i class="fa-solid fa-users"></i>
                     <h3>Branding</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
                     <h3>Design</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
+                    <i class="fa-solid fa-code"></i>
                     <h3>Development</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
+                    <i class="fa-solid fa-wifi"></i>
                     <h3>Support</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
             </section>
 
-            <article>
+            <form class="email">
                 <h2>Sign up for our newsletter</h2>
-                <input type="email" value="Hedda@gmail.com"><button>Sign me up</button>
-            </article>
+                <input type="email" placeholder="Hedda@gmail.com..." title="email"><button class="orange-button" type="submit" title="sign-me-up">Sign me up</button>
+            </form>
 
         </main>
 
