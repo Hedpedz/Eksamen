@@ -1,0 +1,100 @@
+.flex-section, .flex-section-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+  
+.flex-section img, .flex-section-bottom img {
+    width: 100%;
+    height: auto;
+}
+
+.alone {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.alone img {
+    width: 100%;
+    height: auto;
+}
+
+.top_bar {
+    display: grid;
+    position: relative; 
+    width: 100%; 
+    height: 400px; 
+}
+
+.top_bar img {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 1;
+}
+
+.top_bar h2, .top_bar p, .top_bar button {
+    grid-area: 1 / 1 / 2 / 2;
+    position: absolute;
+    z-index: 2;
+    margin: 0; 
+    color: white; 
+}
+
+.top_bar h2 {
+    top: 10%;
+    left: 10%;
+}
+
+.top_bar p {
+    top: 20%;
+    left: 10%;
+    right: 10%;
+}
+
+.top_bar button {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.top_bar button a {
+    color: white; 
+    text-decoration: none;
+}
+
+
+.company {
+    display: grid;
+    position: relative; 
+    width: 100%; 
+    height: 400px; 
+}
+
+.company img {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 1;
+}
+
+
+@media screen and (min-width: 768px) {
+.flex-section {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.alone, .flex-section-bottom {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+  
