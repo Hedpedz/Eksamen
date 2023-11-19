@@ -24,7 +24,6 @@ header  {
 .navbar {
     display: grid;
     flex-wrap: wrap;
-    gap: 2rem;
     margin: 0;
     padding: 0;
     padding-top: 1rem;
