@@ -1,84 +1,119 @@
-.orange-button {
-    background-color: #e6bd43;
+
+body {
+    font-family: 'Roboto', sans-serif;
     color: #000000;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-
-.flex-section, .flex-section-bottom {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
   
+}
 
-.alone {
+
+#grid-container {
     display: grid;
+    grid-template-areas: "header" "main" "footer";
     grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+header  {
+    grid-area: header;
+    text-align: center;
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.navbar {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
     gap: 10px;
 }
 
+.navbar a {
+    color: inherit; 
+    text-decoration: none;  
+}
+
+
+
+main {
+    grid-area: main;
+}
 
 main img {
     width: 100%;
-    height: auto;
+   
 }
+
+
+
+/* About */
+
+.top_about{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+
+.top_about img {
+    width: 100%; 
+    height: 75vh; 
+    object-fit:cover;
+    grid-area: 1 / 1;
+}
+
+.top_text {
+    width: 60%;
+    background-color:#ffffffd0;
+    color:#000;
+    grid-area: 1 / 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    
+
+}
+
 
 
 .clients img {
     width: 20%;
     height: auto;
+
 }
-
-.top_bar_about {
-    padding: 10px;
-    text-align: center;
-}
-
-
 
 .maps {
-    width: auto;
-    height: auto;
-    
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: auto;
+    padding-right: auto;
 }
-
-
-.company {
-    display: grid;
-    position: relative; 
-    width: 100%; 
-    height: 400px; 
-}
-
-.company img {
-    grid-area: 1 / 1 / 2 / 2;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: 1;
-}
-
 
 footer {
-    background: #252525;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
+    grid-area: footer;
+}
+
+/* Extra */
+
+.orange-button {
+    background-color: #e6bd43;
+    color: #000000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
 }
 
 
-@media screen and (min-width: 768px) {
-.flex-section {
-    grid-template-columns: repeat(3, 1fr);
-}
+@media only screen and (min-width: 600px) {
 
-.alone, .flex-section-bottom {
-    grid-template-columns: repeat(2, 1fr);
-}
-
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+    
+    
 }
   
