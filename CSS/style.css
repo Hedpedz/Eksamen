@@ -1,41 +1,45 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
     color: #000000;
-  
 }
 
 
 #grid-container {
     display: grid;
     grid-template-areas: "header" "main" "footer";
+    justify-content: center;
     grid-template-columns: 1fr;
     gap: 1rem;
     width: 100%;
 }
 
-header  {
+
+header {
     grid-area: header;
-    text-align: center;
-    color: inherit; 
-    text-decoration: none; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar {
-    display: grid;
-    flex-wrap: wrap;
+.navbar  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
     margin: 0;
     padding: 0;
     padding-top: 1rem;
-    gap: 10px;
 }
 
 .navbar a {
-    color: inherit; 
-    text-decoration: none;  
+    text-decoration: none;
+    color: #000000;
 }
-
-
 
 main {
     grid-area: main;
@@ -43,7 +47,10 @@ main {
 
 main img {
     width: 100%;
-   
+}
+
+footer {
+    grid-area: footer;
 }
 
 
@@ -74,16 +81,11 @@ main img {
     padding-right: 2rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    
-
 }
-
-
 
 .clients img {
     width: 20%;
     height: auto;
-
 }
 
 .maps {
@@ -93,18 +95,25 @@ main img {
     padding-right: auto;
 }
 
-footer {
-    grid-area: footer;
-}
 
-/* Extra */
+/* Products.html */
+
+
+
+/* All pages */
 
 .orange-button {
     background-color: #e6bd43;
     color: #000000;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+    border: none;
+    padding: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
 }
+
+
+
+
 
 
 @media only screen and (min-width: 600px) {
@@ -113,6 +122,44 @@ footer {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
     }
     
+ 
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+    }
     
-}
+    .navbar  {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    .top_text {
+        width: 40%;
+        background-color:#ffffffd0;
+        color:#000;
+        grid-area: 1 / 1;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        margin-left: auto;
+        margin-right: 5rem;
+    }
   
+    .top_about{
+        display: grid;
+        align-items: space-between;
+          
+     
+   
+        
+    
+       
+    }
+   
+}
