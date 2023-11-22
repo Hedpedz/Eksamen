@@ -12,7 +12,8 @@ body {
     justify-content: center;
     grid-template-columns: 1fr;
     gap: 1rem;
-    width: 100%;
+    width: auto;
+
 }
 
 
@@ -87,19 +88,74 @@ footer {
     margin-right: auto;
    
 }
+
 .clients {
-    gap: 2rem;
-    padding: 2rem;
     background-color: #e6bd43;
-    place-items: center;
-    display: grid;
-  
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.clients h3 {
+    text-align: center;
+}
+
+/* .clients_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+
+.clients_img img {
+    width: 100px;
+    min-width: 70px;
+    flex: 50%;
+    
+}
+*/
+
+/* .clients_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.clients_img img {
+    flex: 0 0 auto;
+}
+
+.clients_img img:nth-child(-n+2) {
+    width: calc(50% - 10px);
+}
+
+.clients_img img:nth-clild(3) {
+    width: 100%;
+}*/
+
+
+.clients figure {
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+}
+
+.clients figure:first-of-type {
+    flex-wrap: wrap; 
 }
 
 .clients img {
-    width: auto;
-    height: auto;
+    max-width: 45%; 
+    margin: 5px; 
 }
+
+
+.clients figure:last-of-type img {
+    max-width: 90%; 
+}
+
+
 
 .maps {
     display: flex;
