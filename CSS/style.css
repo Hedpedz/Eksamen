@@ -3,6 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: #000000;
+    margin: 0; 
+    padding: 0; 
 }
 
 
@@ -12,7 +14,7 @@ body {
     justify-content: center;
     grid-template-columns: 1fr;
     gap: 1rem;
-    width: auto;
+    
 
 }
 
@@ -24,6 +26,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 1rem;
 }
 
 
@@ -92,68 +95,32 @@ footer {
 .clients {
     background-color: #e6bd43;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    justify-content: space-evenly;
 }
 
 .clients h3 {
     text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
 }
-
-/* .clients_img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-
-
-
-.clients_img img {
-    width: 100px;
-    min-width: 70px;
-    flex: 50%;
-    
-}
-*/
-
-/* .clients_img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.clients_img img {
-    flex: 0 0 auto;
-}
-
-.clients_img img:nth-child(-n+2) {
-    width: calc(50% - 10px);
-}
-
-.clients_img img:nth-clild(3) {
-    width: 100%;
-}*/
-
 
 .clients figure {
     margin: 0; 
     display: flex;
     justify-content: center; 
+    flex-wrap: wrap;
 }
 
-.clients figure:first-of-type {
-    flex-wrap: wrap; 
-}
+
 
 .clients img {
-    max-width: 45%; 
-    margin: 5px; 
+    max-width: 80%;
+    padding: 1rem; 
+
 }
 
 
-.clients figure:last-of-type img {
-    max-width: 90%; 
-}
 
 
 
@@ -219,7 +186,8 @@ footer {
     }
 
    
-  
+
+    
 
    
     
