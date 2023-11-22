@@ -25,6 +25,7 @@ header {
     align-items: center;
 }
 
+
 .navbar  {
     display: flex;
     flex-direction: column;
@@ -67,13 +68,14 @@ footer {
 
 .top_about img {
     width: 100%; 
-    height: 75vh; 
+    height: 80vh; 
     object-fit:cover;
     grid-area: 1 / 1;
 }
 
 .top_text {
-    width: 60%;
+    width: 55%;
+    height: auto;
     background-color:#ffffffd0;
     color:#000;
     grid-area: 1 / 1;
@@ -81,10 +83,21 @@ footer {
     padding-right: 2rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.clients {
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #e6bd43;
+    place-items: center;
+    display: grid;
+  
 }
 
 .clients img {
-    width: 20%;
+    width: auto;
     height: auto;
 }
 
@@ -105,15 +118,34 @@ footer {
 .orange-button {
     background-color: #e6bd43;
     color: #000000;
+    font-family: 'Roboto', sans-serif;
     border: none;
     padding: 0.5rem;
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
 
+.our_services {
+    display: grid; 
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 10px; 
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
 
+.our_services > h2 {
+    grid-column: 1 / -1; 
+}
 
+.our_services p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
 
+.fa-solid{
+    font-size: 2rem;
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -123,43 +155,17 @@ footer {
     }
     
  
-    header {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: end;
-    }
-    
-    .navbar  {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        list-style: none;
-    }
-
     .top_text {
         width: 40%;
-        background-color:#ffffffd0;
-        color:#000;
-        grid-area: 1 / 1;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 2rem;
-        padding-top: 2rem;
+        height: auto;
         margin-left: auto;
         margin-right: 5rem;
     }
-  
-    .top_about{
-        display: grid;
-        align-items: space-between;
-          
-     
+
    
-        
+  
+
+   
     
-       
-    }
    
 }
