@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Hedda Nilsen">
-    <link href="CSS/ikoner/css/fontawesome.css" rel="stylesheet">
-    <link href="CSS/ikoner/css/solid.css" rel="stylesheet">
-    <link href="CSS/ikoner/css/brands.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Hedda Nilsen">
+        <link href="CSS/ikoner/css/fontawesome.css" rel="stylesheet">
+        <link href="CSS/ikoner/css/solid.css" rel="stylesheet">
+        <link href="CSS/ikoner/css/brands.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+    </head>
 <body>
     <div id="grid-container">
         <header>
-            <a href="index.html"><img src="img/logo1.png" alt="LOGO" id="logo"></a>
+            <a href="index.html"><img src="img/logo1.png" alt="logo" id="logo"></a>
             <nav>
                 <ul class="navbar">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Portofolio</a></li>
+                    <li><a href="products.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><button class="orange-button" onclick="window.location.href='about.html'">Contact</button></li>
+                    <li><button class="orange-button" onclick="href='about.html'">Contact</button></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="top">
-                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
-                <h2>Compeling headline</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                <button class="orange-button" onclick="window.location.href='read_more'">Read more about our services</button>
-            </section>
+            <div class="top-index">
+                <img src="IMG/pen-4337521_1920.jpg" alt="https://pixabay.com/no/photos/penn-notisbok-notisblokk-dagbok-4337521/">
+                <article class="top-index-text">
+                    <h1>Compeling headline</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <button class="orange-button" onclick="href='read_more'">Read more about our services</button>
+                </article>
+            </div>
 
             <section class="subheading">
                 <h2>Engaging subheading. What can you help your visitors with</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </section>
 
-            <section class="company">
-                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
-                <h2>About our company</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                <span>
-                    <button class="orange-button" onclick="window.location.href='read_more'">Read more about us</button>
-                </span>                
-            </section>
+            <div class="company">
+                <figure><img src="https://placehold.co/400x400" alt="Grå placeholder bilde" id="company-img"></figure>
+                <article class="company-text">
+                    <h2>About our company</h2>
+                    <p>Lorem ipsum dolor sit amet, sed do eius tempor incididunt ut labore et. Morbi sit amet libero et neque porta finibus. Mauris interdum vehicula fel quis suscipit. Maecenas ut nulla varius,  semper lectus. Sed non lectus diam. Nulla interdum ex quam, in dapibus dui accumsan quis. In id nisl posuere, pulvie nulla non, pretium neque. Proin vitae dignissim urna. Maecenas interdum velit purus.</p>
+                    <span>
+                        <button class="company-button" onclick="href='read_more'">Read more about us</button>
+                    </span>    
+                </article>            
+            </div>
 
             <section class="our_services">
-                <h2>Our services</h2>
+                <h3>Our services</h3>
                 <article>
                     <i class="fa-solid fa-users"></i>
-                    <h3>Branding</h3>
+                    <h4>Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
                     <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <h3>Design</h3>
+                    <h4>Design</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
                     <i class="fa-solid fa-code"></i>
-                    <h3>Development</h3>
+                    <h4>Development</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
                     <i class="fa-solid fa-wifi"></i>
-                    <h3>Support</h3>
+                    <h4>Support</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
             </section>
 
-            <form class="email">
-                <h2>Sign up for our newsletter</h2>
-                <input type="email" placeholder="Hedda@gmail.com..." title="email"><button class="orange-button" type="submit" title="sign-me-up">Sign me up</button>
+            <form class="newsletter">
+                <h5>Sign up for our newsletter</h5>
+                <input type="email" placeholder="Heddanilsen@gmail.com..." title="email"> <button class="orange-button" >Sign me up!</button>
             </form>
         </main>
         

@@ -1,6 +1,7 @@
 
 body {
-    font-family: sans-serif;    
+    font-family: sans-serif;  
+    font-weight: 100;  
     color: #000000;
     margin: 0; 
     padding: 0; 
@@ -67,15 +68,97 @@ footer {
 /* Index */
 
 
+.top-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
 
 
+.top-index img {
+    width: 100%; 
+    height: 40vh; 
+    object-fit:cover;
+    grid-area: 1 / 1;
+}
+
+.top-index-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#000;
+    background-color:#ffffff82;
+    grid-area: 1 / 1;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.top-index-text h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.subheading {
+    text-align: center;
+    place-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
 
 
+.company {
+    background-color: #e6bd43;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    align-items: center;
+    
+}
 
+.company-text {
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    width: 50%;
+}
 
+.company-button {
+    width: fit-content;
+    text-align: left;
+    text-align: left;
+    border: 3px solid #000000;
+    background-color: #e6bd43;
+    color: #000000;
+    padding: 1rem;
+    font-weight: 750;
+    font-size: 1rem;
+}
 
+.newsletter {
+    background-color: #f1f1f1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;    
+}
 
+.newsletter h2 {
+    text-align: center;
+}
 
+.newsletter input {
+    padding: 18px;
+    border: none;
+    width: auto;
+    max-width: 160px;
+}
+    
 
 
 /* About */
@@ -101,12 +184,10 @@ footer {
     background-color:#ffffffd0;
     color:#000;
     grid-area: 1 / 1;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
    
 }
 
@@ -198,8 +279,7 @@ footer {
 .maps {
     display: flex;
     flex-wrap: wrap;
-    padding-left: auto;
-    padding-right: auto;
+    
 }
 
 
@@ -212,13 +292,19 @@ footer {
 .orange-button {
     background-color: #e6bd43;
     color: #000000;
-    font-family: 'Roboto', sans-serif;
     width: fit-content;
     border: none;
+    text-align: left;
     padding: 1rem;
+    font-weight: 750;
     font-size: 1rem;
+   
+    
     
 }
+
+
+
 
 .our_services {
     display: grid; 
@@ -274,7 +360,7 @@ footer {
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 750px) {
 
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
@@ -310,9 +396,16 @@ footer {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
-          
     }
     
+    .company {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .company-text {
+        padding-left: 1rem;
+    }
 
-   
 }
