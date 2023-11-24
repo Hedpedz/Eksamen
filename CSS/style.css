@@ -24,19 +24,22 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 
 .navbar  {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    list-style: none;
     gap: 1rem;
+    list-style: none;
     margin: 0;
     padding: 0;
     padding-top: 1rem;
@@ -149,7 +152,7 @@ footer {
     align-items: center;
     padding-left: 5rem;
     padding-right: 5rem;
-    width: 50%;
+    width: 40%;
 }
 
 .company-button {
@@ -350,14 +353,18 @@ footer {
 }
 
 .portfolio-button {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: ;
     gap: 1rem;
+    
 }
 
 .category-button{
-    width: fit-content;
+    width:auto;
     text-align: left;
     text-align: left;
     border: 1px solid #000000;
@@ -365,12 +372,13 @@ footer {
     color: #000000;
     cursor: pointer;
     padding: 5px;
+    font-size: 1rem;
     
 }
 
 .flex-section-portfolio {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-bottom: 2rem;
 }
 
@@ -387,6 +395,7 @@ footer {
     flex-grow: 1;
     margin: 0;
     gap: 1rem;
+    font-weight: 700;
   
     
 }
@@ -435,7 +444,7 @@ footer {
 .our_services p {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 50%;
 }
 
 .fa-solid{
@@ -576,7 +585,21 @@ footer {
     }
 
    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
     
+    
+    .navbar  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
 
 }
 
