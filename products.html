@@ -17,10 +17,10 @@
             <img src="IMG/logo1.png" alt="LOGO" class="logo">
             <nav>
                 <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><button class="orange-button" onclick="window.location.href='about.html'">Contact</button></li>
+                    <li><a href="index.html" class="underline active">Home</a></li>
+                    <li><a href="products.html" class="underline active">Portfolio</a></li>
+                    <li><a href="about.html" class="underline active">About</a></li>
+                    <li><button class="orange-button">Contact</button></li>
                 </ul>
             </nav>
         </header>
@@ -30,15 +30,15 @@
                 <h1>Portfolio</h1>
             </section>
 
-            <div class="padding figure">
+            <div class="flex-section-portfolio">
                 <section class="line-heading">
                     <h2>Explore previous jobs</h2>
                 </section>
 
-                <span class="category-button">
-                    <button>Branding</button>
-                    <button>Design</button>
-                    <button>Development</button>
+                <span class="portfolio-button">
+                    <button class="category-button" onclick="href='read_more'">Branding</button>
+                    <button class="category-button" onclick="href='read_more'">Design</button>
+                    <button class="category-button" onclick="href='read_more'">Development</button>
                 </span>
 
                 <section class="line-heading">
@@ -61,8 +61,10 @@
                 </figure>
                 
                 <figure class="flex-img-alone">
-                    <img src="https://placehold.co/400x400" alt="Grå placeholder bilde">
-                    <figcaption>Et harum quidem</figcaption>
+                    <figure>
+                        <img src="https://placehold.co/400x400" alt="Grå placeholder bilde">
+                        <figcaption>Et harum quidem</figcaption>
+                    </figure>
                 </figure>
         
                 <section class="line-heading">
@@ -89,7 +91,7 @@
                     <h2>Development</h2>
                 </section>
             
-                <figure class="flex-double-img">
+                <figure class="flex-img">
                     <figure>
                         <img src="https://placehold.co/400x400" alt="Grå placeholder bilde">
                     <figcaption>Et harum quidem</figcaption>
