@@ -14,8 +14,6 @@ body {
     grid-template-areas: "header" "main" "footer";
     justify-content: center;
     grid-template-columns: 1fr;
-    
-    
 }
 
 header {
@@ -109,8 +107,6 @@ footer {
     grid-area: 1 / 1;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
-  
-    
 }
 
 .top-index-text h1 {
@@ -128,7 +124,6 @@ footer {
     padding-bottom: 3rem;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
-    
 }
 
 
@@ -249,8 +244,6 @@ footer {
     margin: 0;
 }
 
-
-
 .flex-section-about {
     background-color: #f1f1f1;
     padding-left: 1.5rem;
@@ -270,7 +263,6 @@ footer {
     width: auto;
     max-width: 500px;
     padding-bottom: 2rem;
-    
 }
 
 .send input, textarea {
@@ -287,7 +279,6 @@ footer {
     flex-direction: column;
     width: auto;
     max-width: 500px;
-    
 }
 
 .contact_information .fa-solid {
@@ -297,14 +288,22 @@ footer {
 
 
 
-
-
-
-.maps {
-    display: flex;
-    flex-wrap: wrap;
-    
+.map-responsive{
+    position:relative;
 }
+
+.map-responsive iframe{
+    height:auto;
+    width:100%;
+}
+ 
+
+
+
+ 
+
+
+
 
 
 /* Products.html */
