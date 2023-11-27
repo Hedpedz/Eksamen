@@ -25,7 +25,6 @@ header {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    
 }
 
 .navbar {
@@ -37,20 +36,18 @@ header {
     margin: 0;
     padding: 0;
     padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 
 
 .navbar a {
     text-decoration: none;
-    font-weight: normal;
     color: #000000;
+    
 }
 
-.underline.active {
-    text-decoration: underline;
-    text-decoration-color:#e6bd43;
-}
+
 
 main {
     grid-area: main;
@@ -143,36 +140,37 @@ footer {
 
 .company-text {
     align-items: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    width: 40%;
+    width: 50%;
 }
 
 .company-button {
+    display: block;
     width: fit-content;
-    text-align: left;
-    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
     border: 3px solid #000000;
     background-color: #e6bd43;
-    color: #000000;
-    cursor: pointer;
     padding: 1rem;
     font-weight: 750;
     font-size: 1rem;
 }
+    
+
 
 
 .newsletter {
     background-color: #f1f1f1;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    text-align: center;    
 }
 
-.newsletter h2 {
+.newsletter h4 {
+    display: block;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .newsletter input {
@@ -180,6 +178,12 @@ footer {
     border: none;
     width: auto;
     max-width: 160px;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
     
 
@@ -355,21 +359,19 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: ;
     gap: 1rem;
     
 }
 
 .category-button{
+    display: flex;
     width:auto;
-    text-align: left;
-    text-align: left;
+    text-decoration: none;
     border: 1px solid #000000;
     background-color: #ffffff;
     color: #000000;
     cursor: pointer;
-    padding: 5px;
-    font-size: 1rem;
+    padding: 10px;
     
 }
 
@@ -410,7 +412,12 @@ footer {
 /* All pages */
 
 .orange-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:end;
     background-color: #e6bd43;
+    text-decoration: none;
     color: #000000;
     width: fit-content;
     border: none;
@@ -419,6 +426,7 @@ footer {
     padding: 1rem;
     font-weight: 750;
     font-size: 1rem;
+   
 }
 
 
@@ -520,11 +528,22 @@ footer {
         width: 70%;
     }
 
-    button:hover {
+
+
+    .orange-button:hover {
         background-color: #252525;
         color: #e6bd43;
     }
 
+    .company-button:hover {
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    .category-button:hover {
+        background-color: #252525;
+        color: #e6bd43;
+    }
 
     .top_text {
         width: 40%;

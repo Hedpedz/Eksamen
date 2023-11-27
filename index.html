@@ -20,7 +20,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><button class="orange-button" onclick="href='about.html'">Contact</button></li>
+                    <li><a href="about.html#contact-form" class="orange-button">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,7 +33,8 @@
                 <article class="top-index-text">
                     <h1>Compeling headline</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    <button class="orange-button" onclick="our_services">Read more about our services</button>
+                    <a href="#our-services" class="orange-button">Read more about our services</a>
+
                 </article>
             </div>
 
@@ -48,12 +49,13 @@
                     <h2>About our company</h2>
                     <p>Lorem ipsum dolor sit amet, sed do eius tempor incididunt ut labore et. Morbi sit amet libero et neque porta finibus. Mauris interdum vehicula fel quis suscipit. Maecenas ut nulla varius,  semper lectus. Sed non lectus diam. Nulla interdum ex quam, in dapibus dui accumsan quis. In id nisl posuere, pulvie nulla non, pretium neque. Proin vitae dignissim urna. Maecenas interdum velit purus.</p>
                     <span>
-                        <button class="company-button" onclick="href='about.html'">Read more about us</button>
-                    </span>    
+                        <a href="about.html" class="company-button">Read more about us</a>
+                    </span>
+                    
                 </article>            
             </div>
 
-            <section class="our_services">
+            <section class="our_services" id="our-services">
                 <h2>Our services</h2>
                 <section>
                     <i class="fa-solid fa-users"></i>
@@ -77,10 +79,13 @@
                 </section>
             </section>
 
-            <form class="newsletter">
-                <h5>Sign up for our newsletter</h5>
-                <input type="email" placeholder="Heddanilsen@gmail.com..." title="email"> <button class="orange-button" >Sign me up!</button>
-            </form>
+            <section class="newsletter">
+                <h4>Sign up for our newsletter</h4>
+                <form class="sign-up">
+                    <input type="email" placeholder="Heddanilsen@gmail.com..." title="email">
+                    <a href="#" class="orange-button" >Sign me up!</a>
+                </form>
+            </section>
         </main>
         
         <footer>

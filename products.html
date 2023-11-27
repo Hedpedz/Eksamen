@@ -14,13 +14,13 @@
 <body>
     <div id="grid-container">
         <header>
-            <img src="IMG/logo1.png" alt="LOGO" class="logo">
+            <a href="index.html"><img src="img/logo1.png" alt="logo" id="logo"></a>
             <nav>
                 <ul class="navbar">
-                    <li><a href="index.html" class="underline active">Home</a></li>
-                    <li><a href="products.html" class="underline active">Portfolio</a></li>
-                    <li><a href="about.html" class="underline active">About</a></li>
-                    <li><button class="orange-button">Contact</button></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html#contact-form" class="orange-button">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,12 +36,12 @@
                 </section>
 
                 <span class="portfolio-button">
-                    <button class="category-button" onclick="href='read_more'">Branding</button>
-                    <button class="category-button" onclick="href='read_more'">Design</button>
-                    <button class="category-button" onclick="href='read_more'">Development</button>
+                    <a href="#branding" class="category-button">Branding</a>
+                    <a href="#design" class="category-button">Design</a>
+                    <a href="#development" class="category-button">Development</a>
                 </span>
 
-                <section class="line-heading">
+                <section class="line-heading" id="branding">
                     <h2>Branding</h2>
                 </section>
 
@@ -67,7 +67,7 @@
                     </figure>
                 </figure>
         
-                <section class="line-heading">
+                <section class="line-heading" id="design">
                     <h2>Design</h2>
                 </section>
 
@@ -87,7 +87,7 @@
                     </figure>  
                 </figure>
 
-                <section class="line-heading">
+                <section class="line-heading" id="development">
                     <h2>Development</h2>
                 </section>
             
