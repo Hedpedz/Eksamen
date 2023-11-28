@@ -72,6 +72,11 @@ footer {
 
 /* Index */
 
+.underline {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:#e6bd43;
+}
 
 .top-index {
     display: grid;
@@ -468,19 +473,15 @@ footer {
     font-size: 2rem;
 }
 
-
-.fa {
-    display: inline;
+.fa-brands{
+    color: white;
+    background-color: #252525;
     text-decoration: none;
-    background: #f4f4f4;
-    color: #252525;
-    width: 25px;
-    padding: 5px;
-    font-size: 25px;
-    border-radius: 10%;
-  }
+    font-size: 2rem;
+}
+
   
-  .some {
+.some {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -488,9 +489,10 @@ footer {
     margin: 0;
     padding: 0;
     gap: 2rem;
-   
-  }
-  
+}
+
+
+
 
 
 
