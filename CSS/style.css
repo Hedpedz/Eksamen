@@ -1,13 +1,14 @@
 
 body {
-    font-family: sans-serif;  
-    font-weight: 100;  
+    font-family: sans-serif;    
     color: #000000;
+    font-weight: 100;
     padding: 0;
     margin: 0 auto;
     max-width: 1600px;
     width: 100%;
 }
+
 
 
 #grid-container {
@@ -31,8 +32,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
     list-style: none;
+    gap: 1rem;
     margin: 0;
     padding: 0;
     padding-top: 0.5rem;
@@ -60,9 +61,9 @@ main img {
 footer {
     grid-area: footer;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
     color: #f1f1f1;
     background-color: #252525 ;
     padding-top: 2rem;
@@ -74,40 +75,40 @@ footer {
 
 .top-index {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     position: relative;
-    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;    
 }
 
 
 .top-index-video {
+    display: none; 
+    object-fit: cover;
     width: 100%; 
     height: 40vh; 
-    object-fit: cover;
     grid-area: 1 / 1;
-    display: none; 
+    
 }
 
 
 .top-index-img {
+    object-fit: cover;
     width: 100%; 
     height: 40vh; 
-    object-fit: cover;
     grid-area: 1 / 1;
 }
 
 .top-index-text {
     display: flex;
+    text-align: center;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     color:#000;
     background-color:#ffffff82;
-    grid-area: 1 / 1;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+    grid-area: 1 / 1;
 }
 
 .top-index-text h1 {
@@ -129,12 +130,12 @@ footer {
 
 
 .company {
-    background-color: #e6bd43;
     display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     align-items: center;
+    flex-direction: column;
+    background-color: #e6bd43;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
     
 }
 
@@ -145,15 +146,15 @@ footer {
 
 .company-button {
     display: block;
-    width: fit-content;
     cursor: pointer;
+    width: fit-content;
     text-decoration: none;
     color: #000000;
-    border: 3px solid #000000;
     background-color: #e6bd43;
-    padding: 1rem;
+    border: 3px solid #000000;
     font-weight: 750;
     font-size: 1rem;
+    padding: 1rem;
 }
     
 
@@ -174,9 +175,9 @@ footer {
 }
 
 .newsletter input {
-    padding: 18px;
     border: none;
     width: auto;
+    padding: 18px;
     max-width: 160px;
 }
 
@@ -192,37 +193,37 @@ footer {
 
 .top_about{
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    place-items: center;
 }
 
 
 .top_about img {
-    width: 100%; 
-    height: 80vh; 
     object-fit:cover;
+    width: 100%; 
+    height: 70vh; 
     grid-area: 1 / 1;
 }
 
 .top_text {
-    width: 55%;
     height: auto;
-    background-color:#ffffffd0;
     color:#000;
+    background-color:#ffffffd0;
+    width: 55%;
     grid-area: 1 / 1;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
    
 }
 
 .clients {
     background-color: #e6bd43;
+    justify-content: space-evenly;
     padding-top: 2rem;
     padding-bottom: 3rem;
-    justify-content: space-evenly;
 }
 
 .clients h3 {
@@ -231,12 +232,12 @@ footer {
     padding-bottom: 2rem;
 }
 
-.clients figure {
-    margin: 0; 
+.clients figure { 
     display: flex;
-    justify-content: center; 
     flex-wrap: wrap;
+    justify-content: center; 
     gap: 2rem;
+    margin: 0;
 }
 
 .clients img {
@@ -267,15 +268,16 @@ footer {
 
 .send {
     display: flex;
-    flex-direction: column;
     width: auto;
+    flex-direction: column;
     max-width: 500px;
     padding-bottom: 2rem;
 }
 
 .send input, textarea {
-    padding: 1rem;
     border: none;
+    padding: 1rem;
+
 }
 
 .send button{
@@ -284,8 +286,8 @@ footer {
 
 .contact_information {
     display: flex;
-    flex-direction: column;
     width: auto;
+    flex-direction: column;
     max-width: 500px;
 }
 
@@ -324,9 +326,9 @@ footer {
 
 
 .top-portfolio img {
+    object-fit:cover;
     width: 100%; 
     height: 40vh; 
-    object-fit:cover;
     grid-area: 1 / 1;
 }
 
@@ -354,11 +356,11 @@ footer {
 }
 
 .portfolio-button {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     gap: 1rem;
     
 }
@@ -366,11 +368,11 @@ footer {
 .category-button{
     display: flex;
     width:auto;
+    cursor: pointer;
     text-decoration: none;
+    color: #000000;
     border: 1px solid #000000;
     background-color: #ffffff;
-    color: #000000;
-    cursor: pointer;
     padding: 10px;
     
 }
@@ -379,13 +381,14 @@ footer {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 2rem;
+   
 }
 
 .flex-section-portfolio img {
-    max-width: 692px;
     height: auto;
     display: flex;
     flex-wrap: wrap; 
+    max-width: 692px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -411,6 +414,18 @@ footer {
 
 /* All pages */
 
+#arrow {
+    position: fixed; 
+    text-decoration: none;       
+    color: #ffffff;  
+    background-color: #252525; 
+    bottom: 2rem;      
+    right: 1rem;  
+    padding: 1rem 1rem;
+    border-radius: 5px; 
+    font-size: 1rem; 
+}
+
 .orange-button {
     display: flex;
     flex-direction: column;
@@ -426,17 +441,16 @@ footer {
     padding: 1rem;
     font-weight: 750;
     font-size: 1rem;
-   
 }
 
 
 .our_services {
     display: grid; 
     text-align: center;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
     gap: 10px; 
     padding-top: 2rem;
     padding-bottom: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
 }
 
 .our_services > h2 {
@@ -450,20 +464,20 @@ footer {
 }
 
 .fa-solid{
+    color: #252525;
     font-size: 2rem;
-    color: #252525 ;
 }
 
 
 .fa {
     display: inline;
-    padding: 5px;
-    font-size: 25px;
-    width: 25px;
-    border-radius: 10%;
     text-decoration: none;
     background: #f4f4f4;
     color: #252525;
+    width: 25px;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 10%;
   }
   
   .some {
