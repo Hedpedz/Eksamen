@@ -7,21 +7,20 @@
         <meta name="author" content="Hedda Nilsen">
         <meta property="og:title" content="About us - Companyname">
         <meta property="og:description" content="Discover the story of Companyname, our clients and get in touch with us .">
-        <meta property="og:url" content="https://www.companyname.no/about.html">
+        <meta property="og:url" content="http://schema.org"><!-- riktig?-->
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://www.companyname.no/img/logo1.png">
         <link href="CSS/ikoner/css/fontawesome.css" rel="stylesheet">
         <link href="CSS/ikoner/css/solid.css" rel="stylesheet">
         <link href="CSS/ikoner/css/brands.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/cat-favicon" href="IMG/caticon.png">
         <title>About us - Companyname</title>
     </head>
     <body>
         <div id="grid-container">
             <header>
-                <a href="index.html"><img src="img/logo1.png" alt="Logo image" title="Our logo picture"></a>
+                <a href="index.html"><img src="img/logo1.png" alt="The webpage`s logo image" title="Our logo picture"></a> <!-- Content image, therefor 'alt' is filled. -->
                 <nav tabindex="0">
                     <ul class="navbar">
                         <li><a href="index.html" title="The home page" aria-label="Navigate to home page">Home</a></li>
@@ -33,7 +32,7 @@
             </header>
             <main>
                 <div class="top_about" tabindex="1">
-                    <img src="IMG/pen-4337521_1920.jpg" alt="Photo of a Macbook, phone and writing stuff"> <!-- Imagesource: https://pixabay.com/no/photos/penn-notisbok-notisblokk-dagbok-4337521/ -->
+                    <img src="IMG/pen-4337521_1920.jpg" alt="Photo of a Macbook, phone and writing stuff"> <!-- Content image, therefor 'alt' is filled. Imagesource: https://pixabay.com/no/photos/penn-notisbok-notisblokk-dagbok-4337521/ -->
                     <section class="top_text">
                         <p>Company name</p>
                         <h1>About our company</h1>
@@ -41,46 +40,46 @@
                         <a href="about.html#contact-form" title="Get in contact with us" class="orange-button">Get in touch with us</a>
                     </section>
                 </div>
-                <section class="our_services" tabindex="2" aria-label="Our services" itemscope itemtype="http://schema.org/Service">
+                <div class="our_services" tabindex="2">
                     <h2>Our services</h2>
-                    <section aria-label="Branding">
+                    <section aria-label="Branding" itemscope itemtype="http://schema.org/Service">
                         <i class="fa-solid fa-users"></i>
                         <h3 itemprop="name">Branding</h3>
                         <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
                     </section>
-                    <section aria-label="Design">
+                    <section aria-label="Design" itemscope itemtype="http://schema.org/Service">
                         <i class="fa-solid fa-cloud-arrow-up"></i>
                         <h3 itemprop="name">Design</h3>
                         <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
                     </section>
-                    <section aria-label="Development">
+                    <section aria-label="Development" itemscope itemtype="http://schema.org/Service">
                         <i class="fa-solid fa-code"></i>
                         <h3 itemprop="name">Development</h3>
                         <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
                     </section>
-                    <section aria-label="Support">
+                    <section aria-label="Support" itemscope itemtype="http://schema.org/Service">
                         <i class="fa-solid fa-wifi"></i>
                         <h3 itemprop="name">Support</h3>
                         <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
                     </section>
-                </section>
+                </div>
                 <section class="clients" aria-label="Some of our clients" tabindex="3">
                     <h3>Some of our clients</h3>
-                    <figure>
+                    <figure> <!-- Kommenter figure-->
                         <figure aria-label="Client 1">
-                            <img src="IMG/logo1.png" alt="client logo">
+                            <img src="IMG/logo1.png" alt="A picture of a clients logo">
                         </figure>
                         <figure aria-label="Client 2">
-                            <img src="IMG/logo2.png" alt="client logo">
+                            <img src="IMG/logo2.png" alt="A picture of a clients logo">
                         </figure>
                         <figure aria-label="Client 3">
-                            <img src="IMG/logo3.png" alt="client logo">
+                            <img src="IMG/logo3.png" alt="A picture of a clients logo">
                         </figure>
                     </figure>
                 </section>
                 <h4 class="heading" aria-label="Contact us form" id="contact-form">Contact us</h4>
                 <div class="flex-section-about">
-                    <form class="send" tabindex="4">
+                    <form class="send" tabindex="4"> <!-- Kommenter form-->
                         <h5>Send us a message</h5>
                         <p>Name</p>
                         <input type="text" placeholder="Ola Nordmann..">
@@ -90,20 +89,20 @@
                         <textarea rows="9" placeholder=""></textarea>
                         <button class="orange-button">Send message</button>
                     </form>
-                    <article class="contact_information" itemscope itemtype="http://schema.org/ContactPoint" tabindex="5" aria-label="Contact information">
+                    <article class="contact_information"  itemscope itemtype="http://schema.org/ContactPoint" tabindex="5" aria-label="Contact information">
                         <h5>Contact information</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <p itemprop="address"><i class="fa-solid fa-location-pin"></i> B R A Veien 1, 1757 Halden</p>
+                        <p><i class="fa-solid fa-location-pin"></i> B R A Veien 1, 1757 Halden</p>
                         <p itemprop="telephone"><i class="fa-solid fa-phone"></i>69 60 80 00</p>
-                        <p itemprop="email"><i class="fa-solid fa-envelope"></i><a href="mailto:Postmottak@hiof.no" title="Send us a mail">Postmottak@hiof.no</a></p>
+                        <p><i class="fa-solid fa-envelope"></i><a href="mailto:Postmottak@hiof.no" itemprop="email" title="Send us a mail">Postmottak@hiof.no</a></p>
                     </article>
                 </div>
-                <div class="google-maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8189.229376101043!2d11.355041835879602!3d59.12725811186686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1701003481264!5m2!1sno!2sno" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="google-maps"> <!-- Kommenter iframe-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8189.229376101043!2d11.355041835879602!3d59.12725811186686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1701003481264!5m2!1sno!2sno" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
                 </div>
             </main>
             <footer>
-                <a href="index.html"><img src="img/logo1.png" alt="Logo image" title="Our logo picture"></a>
+                <a href="index.html"><img src="img/logo1.png" alt="Logo image" title="Our logo picture"></a><!-- Content image, therefor 'alt' is filled. -->
                 <h5>Companyrights Companyname 2023</h5>
                 <figure class="some">
                     <a href="https://www.facebook.com/" class="fa-brands fa-square-facebook" title="Facebook"></a>
