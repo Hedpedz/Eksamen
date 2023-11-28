@@ -14,6 +14,7 @@
         <link href="CSS/ikoner/css/solid.css" rel="stylesheet">
         <link href="CSS/ikoner/css/brands.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="cat-favicon" href="IMG/caticon.png">
         <title>Homepage - Companyname</title>
     </head>
     <body>
@@ -45,15 +46,18 @@
                     <h2>Engaging subheading. What can you help your visitors with</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </section>
-                <div class="company" aria-label="Read about us">
-                    <figure><img src="https://placehold.co/400x400" alt="Grey placeholder picture" id="company-img"></figure>
+                <div class="company" itemscope itemtype="http://schema.org/Organization" aria-label="Read about us">
+                    <figure>
+                        <img src="https://placehold.co/400x400" alt="Grey placeholder picture" itemprop="logo" id="company-img">
+                    </figure>
                     <article class="company-text" tabindex="3">
-                        <h2>About our company</h2><p>Lorem ipsum dolor sit amet, sed do eius tempor incididunt ut labore et. Morbi sit amet libero et neque porta finibus. Mauris interdum vehicula fel quis suscipit. Maecenas ut nulla varius,  semper lectus. Sed non lectus diam. Nulla interdum ex quam, in dapibus dui accumsan quis. In id nisl posuere, pulvie nulla non, pretium neque. Proin vitae dignissim urna. Maecenas interdum velit purus.</p>
+                        <h2 itemprop="name">About our company</h2>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, sed do eius tempor incididunt ut labore et...</p>
                         <span>
                             <a href="about.html" class="company-button">Read more about us</a>
                         </span>
                     </article>            
-                </div>
+                </div>                
                 <section class="our_services" id="our-services"  tabindex="4" aria-label="Our services">
                     <h2>Our services</h2>
                     <section aria-label="Branding">

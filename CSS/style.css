@@ -72,11 +72,6 @@ footer {
 
 /* Index */
 
-.underline {
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color:#e6bd43;
-}
 
 .top-index {
     display: grid;
@@ -429,6 +424,12 @@ footer {
     padding: 1rem 1rem;
     border-radius: 5px; 
     font-size: 1rem; 
+}
+
+.underline {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:#e6bd43;
 }
 
 .orange-button {
