@@ -7,7 +7,6 @@
         <meta name="author" content="Hedda Nilsen">
         <meta property="og:title" content="Homepage - Companyname">
         <meta property="og:description" content="Discover who we are at Companyname and what we do.">
-        <meta property="og:url" content="https://www.companyname.no/index.html"> <!-- riktig?-->
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://www.companyname.no/img/logo1.png">
         <link href="CSS/ikoner/css/fontawesome.css" rel="stylesheet">
@@ -24,7 +23,7 @@
                 <a href="index.html"><img src="IMG/logo1.png" alt="The webpage`s logo" title="Our logo picture"></a>
                 <nav tabindex="0">
                     <ul class="navbar">
-                        <li class="underline"><a href="index.html" title="Our homepage">Home</a></li>
+                        <li class="underline"><a href="index.html" title="The home page" aria-label="Navigate to home page">Home</a></li>
                         <li><a href="products.html" title="Picture gallery" aria-label="Navigate to portfolio">Portfolio</a></li>
                         <li><a href="about.html" title="Learn more about us" aria-label="Navigate to about us">About</a></li>
                         <li><a href="about.html#contact-form" title="Get in contact with us" aria-label="Navigate to contact us section" class="orange-button">Contact</a></li>
@@ -36,20 +35,20 @@
                     <video autoplay muted loop class="top-index-video">
                         <source src="IMG/mountains.mp4" type="video/mp4">
                     </video>
-                    <img src="IMG/pen-4337521_1920.jpg" class="top-index-img" alt="Photo of a Macbook, phone and writing stuff"> <!-- Content image, therefor 'alt' is filled. Imagesource: https://pixabay.com/no/photos/penn-notisbok-notisblokk-dagbok-4337521/ -->
+                    <img src="IMG/pen-4337521_1920.jpg" class="top-index-img" alt="Photo of a Macbook, phone and writing stuff"> <!-- Innholds bilde, derfor er 'alt' utfylt. Kilde: https://pixabay.com/no/photos/penn-notisbok-notisblokk-dagbok-4337521/ -->
                     <article class="top-index-text">
                         <h1>Compeling headline</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet. </p>
                         <a href="index.html#our-services" class="orange-button" title="Explore what we can offer">Read more about our services</a>
                     </article>
                 </div>
                 <section class="subheading" tabindex="2" aria-label="Engaging subheading">
                     <h2>Engaging subheading. What can you help your visitors with</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet. </p>
                 </section>
                 <div class="company">
-                    <figure><!-- Kommenter figure-->
-                        <img src="https://placehold.co/400x400" alt=""> <!-- Decorative image, therefore 'alt' is empty -->
+                    <figure><!-- Søkte opp hvordan man kan få bildetekst under hvert bilde, og brukte kilde: https://www.w3schools.com/tags/tag_figure.asp -->
+                        <img src="https://placehold.co/400x400" alt=""> <!-- Pynte bilde, derfor er 'alt' tom -->
                     </figure> 
                     <article class="company-text" tabindex="3">
                         <h2>About our company</h2>
@@ -59,7 +58,7 @@
                         </span>
                     </article>            
                 </div>
-                <section class="our_services" id="our-services" tabindex="4" aria-label="Our services" itemscope itemtype="http://schema.org/Organization">
+                <section class="our-services" tabindex="4" aria-label="Our services" itemscope itemtype="http://schema.org/Organization">
                     <h2>Our services</h2>
                     <section aria-label="Branding" itemprop="description">
                         <i class="fa-solid fa-users"></i>
@@ -84,7 +83,7 @@
                 </section>
                 <section class="newsletter" tabindex="5" >
                     <h4>Sign up for our newsletter</h4>
-                    <form class="sign-up"><!-- Kommenter form-->
+                    <form class="sign-up"><!-- Forms kom opp som forslag i VSC, og lærte mer på: https://www.w3schools.com/html/html_forms.asp -->
                         <input type="email" placeholder="Heddanilsen@gmail.com..." aria-label="Newsletter" title="email">
                         <a href="#" class="orange-button" >Sign me up!</a>
                     </form>
@@ -93,11 +92,11 @@
             <footer>
                 <a href="index.html"><img src="IMG/logo1.png" alt="The webpage`s logo" title="Our logo picture"></a>
                 <h5>Companyrights Companyname 2023</h5>
-                    <figure class="some">
-                        <a href="https://www.facebook.com/" class="fa-brands fa-square-facebook" title="Facebook"></a>
-                        <a href="https://www.instagram.com/" class="fa-brands fa-square-instagram" title="Instagram"></a>
-                        <a href="https://www.linkedin.com/in/" class="fa-brands fa-linkedin" title="Linkedin"></a>
-                    </figure>
+                <figure class="some">
+                    <a href="https://www.facebook.com/" class="fa-brands fa-square-facebook" title="Facebook"></a>
+                    <a href="https://www.instagram.com/" class="fa-brands fa-square-instagram" title="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/" class="fa-brands fa-linkedin" title="Linkedin"></a>
+                </figure>
             </footer>
         </div>
         <a href="#top" class="fa-solid fa-arrow-up" id="arrow" title="Go to top"></a>

@@ -9,14 +9,11 @@ body {
     width: 100%;
 }
 
-
-
 #grid-container {
     display: grid;
     grid-template-areas: "header" "main" "footer";
     justify-content: center;
     grid-template-columns: 1fr;
-    
 }
 
 header {
@@ -40,15 +37,10 @@ header {
     padding-bottom: 0.5rem;
 }
 
-
-
 .navbar a {
     text-decoration: none;
     color: #000000;
-    
 }
-
-
 
 main {
     grid-area: main;
@@ -72,7 +64,6 @@ footer {
 
 /* Index */
 
-
 .top-index {
     display: grid;
     position: relative;
@@ -80,16 +71,13 @@ footer {
     grid-template-rows: 1fr;    
 }
 
-
 .top-index-video {
     display: none; 
     object-fit: cover;
     width: 100%; 
     height: 40vh; 
     grid-area: 1 / 1;
-    
 }
-
 
 .top-index-img {
     object-fit: cover;
@@ -128,7 +116,6 @@ footer {
     padding-right: 3.5rem;
 }
 
-
 .company {
     display: flex;
     align-items: center;
@@ -136,7 +123,6 @@ footer {
     background-color: #e6bd43;
     padding-bottom: 3rem;
     padding-top: 3rem;
-    
 }
 
 .company-text {
@@ -157,9 +143,6 @@ footer {
     padding: 1rem;
 }
     
-
-
-
 .newsletter {
     background-color: #f1f1f1;
     padding-top: 1rem;
@@ -187,8 +170,6 @@ footer {
     justify-content: center;
 }
     
-
-
 /* About */
 
 .top_about{
@@ -197,7 +178,6 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
-
 
 .top_about img {
     object-fit:cover;
@@ -216,7 +196,6 @@ footer {
     padding-right: 2.5rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
-   
 }
 
 .clients {
@@ -265,7 +244,6 @@ footer {
     margin: 0;
 }
 
-
 .send {
     display: flex;
     width: auto;
@@ -277,26 +255,23 @@ footer {
 .send input, textarea {
     border: none;
     padding: 1rem;
-
 }
 
 .send button{
     margin-top: 0.5rem;
 }
 
-.contact_information {
+.contact-information {
     display: flex;
     width: auto;
     flex-direction: column;
     max-width: 500px;
 }
 
-.contact_information .fa-solid {
+.contact-information .fa-solid {
     font-size: 1.5rem;
     margin-right: 1.5rem;
 }
-
-
 
 .google-maps{
     display: flex;
@@ -306,16 +281,6 @@ footer {
     height: 0%;  
 }
 
-
-
-
-
- 
-
-
-
-
-
 /* Products.html */
 
 .top-portfolio {
@@ -323,7 +288,6 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
-
 
 .top-portfolio img {
     object-fit:cover;
@@ -352,7 +316,6 @@ footer {
 .line-heading {
     padding-bottom: 1rem;
     padding-top: 1rem;
-   
 }
 
 .portfolio-button {
@@ -362,7 +325,6 @@ footer {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     gap: 1rem;
-    
 }
 
 .category-button{
@@ -374,14 +336,12 @@ footer {
     border: 1px solid #000000;
     background-color: #ffffff;
     padding: 10px;
-    
 }
 
 .flex-section-portfolio {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 2rem;
-   
 }
 
 .flex-section-portfolio img {
@@ -389,7 +349,7 @@ footer {
     display: flex;
     flex-wrap: wrap; 
     max-width: 692px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; 
 }
 
 .flex-section-portfolio img:hover {
@@ -408,11 +368,7 @@ footer {
     padding-bottom: 1rem;
 }
 
-
-
-
-
-/* All pages */
+/* Alle sidene */
 
 #arrow {
     position: fixed; 
@@ -437,21 +393,19 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:end;
-    background-color: #e6bd43;
-    text-decoration: none;
-    color: #000000;
-    width: fit-content;
-    border: none;
     text-align: left;
+    width: fit-content;
+    text-decoration: none;
+    border: none;
     cursor: pointer;
+    color: #000000;
+    background-color: #e6bd43;
     padding: 1rem;
     font-weight: 750;
     font-size: 1rem;
 }
 
-
-.our_services {
+.our-services {
     display: grid; 
     text-align: center;
     gap: 10px; 
@@ -460,11 +414,11 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
 }
 
-.our_services > h2 {
+.our-services > h2 {
     grid-column: 1 / -1; 
 }
 
-.our_services p {
+.our-services p {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -481,7 +435,6 @@ footer {
     text-decoration: none;
     font-size: 2rem;
 }
-
   
 .some {
     display: flex;
@@ -493,21 +446,11 @@ footer {
     gap: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 750px) {
 
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
     }
-
 
     header {
         flex-direction: row;
@@ -515,15 +458,25 @@ footer {
         align-items: center;
     }
 
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+
     .navbar {
         flex-direction: row;
         gap: 1rem;
     }
 
-
     .top-index-video {
         display: block; 
     }
+
     .top-index-img {
         display: none; 
     }
@@ -538,12 +491,60 @@ footer {
     .top-index-text p {
        width: 70%;
     }
- 
+
+    .top_text {
+        height: auto;
+        margin-left: auto;
+        margin-right: 5rem;
+        width: 40%;
+    }
+
     .subheading p {
         width: 70%;
     }
 
+    .send {
+        width: 100%;
+        min-width: 350px;
+    }
+    
+    .company {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
+    .company-text {
+        padding-left: 1rem;
+    }
+
+    .flex-section-about {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+
+    .flex-img {
+        flex-flow: row nowrap;
+        display: flex;
+    }
+
+    .flex-section-portfolio figure {
+        display: flex;
+        justify-content: flex-start; 
+        flex-wrap: wrap;
+        flex-basis: 32%;
+        margin: 0; 
+    }
+    
+    .flex-img-alone {
+        max-width: 55%;
+    }
+    
+    .flex-double-img {
+        flex-flow: row nowrap;
+        flex-basis: 50%;
+    }
 
     .orange-button:hover {
         background-color: #252525;
@@ -559,73 +560,6 @@ footer {
         background-color: #252525;
         color: #e6bd43;
     }
-
-    .top_text {
-        width: 40%;
-        height: auto;
-        margin-left: auto;
-        margin-right: 5rem;
-    }
-
-    .flex-section-about {
-        display: flex;
-        justify-content: space-evenly;
-        gap: 2rem;
-    }
-
-    .send {
-        width: 100%;
-        min-width: 350px;
-    }
-    
-   
-    footer {
-        display: flex;
-        flex-direction: row;;
-        flex-wrap: wrap;
-        justify-content: space-between; 
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 2rem;
-    }
-    
-    .company {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        
-    }
-    .company-text {
-        padding-left: 1rem;
-    }
-
-
-
-    .flex-img {
-        flex-flow: row nowrap;
-        display: flex;
-    }
-    
-
-    .flex-section-portfolio figure {
-        flex-basis: 32%;
-        margin: 0; 
-        display: flex;
-        justify-content: flex-start; 
-        flex-wrap: wrap;
-    }
-    
-    
-    .flex-img-alone {
-        max-width: 55%;
-    }
-    
-    
-    .flex-double-img {
-        flex-basis: 50%;
-        flex-flow: row nowrap;
-    }
-
    
 }
 
