@@ -416,7 +416,8 @@ footer {
 
 #arrow {
     position: fixed; 
-    text-decoration: none;       
+    text-decoration: none;  
+    cursor: pointer;     
     color: #ffffff;  
     background-color: #252525; 
     bottom: 2rem;      
