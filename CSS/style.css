@@ -74,6 +74,7 @@ footer {
 .top-index-video {
     display: none; 
     object-fit: cover;
+    color:#ffffffa8;
     width: 100%; 
     height: 40vh; 
     grid-area: 1 / 1;
